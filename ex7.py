@@ -2,8 +2,9 @@ vl = []
 
 while True:
     num = (int(input('Digite um número: ')))
-    if num in vl:
-        vl.pop()
+    for i in vl:
+        if num in vl:
+            vl.remove(i)
     vl.append(num)
     sr = str(input("Quer sair?"))
     if sr == "s":
